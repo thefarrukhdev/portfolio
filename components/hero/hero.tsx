@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { HeroCtas } from "./hero-ctas";
 import { FadeIn, ScaleUnblur } from "@/components/ui/motion-primitives";
 import { PortraitMorph } from "./portrait-morph";
+import { DecryptedText } from "@/components/ui/decrypted-text";
 import { hero } from "@/lib/content";
 
 export function Hero(): ReactNode {
@@ -20,11 +21,18 @@ export function Hero(): ReactNode {
             </p>
 
             <h1 className="text-[2.2rem] font-medium leading-[1.05] tracking-tight text-foreground sm:text-[2.75rem] md:text-[2.5rem] lg:text-[3.65rem]">
-              {hero.headingLines.map((line) => (
-                <span key={line} className="block">
-                  {line}
-                </span>
-              ))}
+              <span className="block">{hero.headingLines[0]}</span>
+              <span className="block">
+                <DecryptedText
+                  text={hero.headingLines[1]}
+                  animateOn="view"
+                  speed={70}
+                  maxIterations={15}
+                  sequential={true}
+                  className="text-foreground"
+                  encryptedClassName="text-cyan-500 font-mono opacity-90"
+                />
+              </span>
             </h1>
 
             <p className="max-w-[34ch] text-[22px] leading-[1.4] tracking-tight text-foreground/65">

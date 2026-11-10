@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { FadeIn } from "@/components/ui/motion-primitives";
+import { SpotlightCard } from "@/components/ui/spotlight-card";
 import { projects as PROJECTS, type Project } from "@/lib/content";
 
 export type ProjectsProps = {
@@ -71,7 +72,7 @@ function ProjectCard({
       className="mb-6 break-inside-avoid md:mb-7"
     >
       <div className="block w-full py-0">
-        <div className="project-card flex h-auto w-full cursor-pointer flex-col gap-4 rounded-3xl border border-foreground/8 bg-background p-3 sm:p-3.5 hover:bg-foreground/[0.02] transition-colors">
+        <SpotlightCard className="project-card flex h-auto w-full cursor-pointer flex-col gap-4 rounded-3xl border border-foreground/8 bg-background p-3 sm:p-3.5 transition-colors">
           <header
             className="flex w-full items-center gap-2.5 px-1 pt-2"
           >
@@ -144,7 +145,7 @@ function ProjectCard({
               )}
             </div>
           </div>
-        </div>
+        </SpotlightCard>
       </div>
     </FadeIn>
   );
