@@ -2,9 +2,11 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { Mail, MessageSquare } from "lucide-react";
+import { useTheme } from "next-themes";
 import { useEffect, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { useContact } from "./contact-context";
+import { StarBorder } from "@/components/ui/star-border";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -12,6 +14,8 @@ export function ContactButton(): ReactNode {
   const [open, setOpen] = useState(false);
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const { openContact } = useContact();
+  const { resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === "dark";
 
   const handleMouseEnter = () => {
     if (closeTimeoutRef.current) {
@@ -39,9 +43,8 @@ export function ContactButton(): ReactNode {
   }, []);
 
   return (
-    <motion.button
-      type="button"
-      layout
+    <StarBorder
+      as={motion.button}
       onClick={openContact}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -51,9 +54,21 @@ export function ContactButton(): ReactNode {
       }}
       onBlur={() => setOpen(false)}
       aria-label="Open contact form"
+      layout
       transition={{ layout: { duration: 0.35, ease: EASE } }}
-      style={{ borderRadius: 12 }}
-      className="focus-ring relative inline-flex h-11 cursor-pointer items-center justify-center bg-foreground px-4 sm:px-5 text-sm font-medium text-background select-none overflow-hidden transition-opacity hover:opacity-90"
+      radius={12}
+      thickness={1.2}
+      duration={4}
+      glow={0.55}
+      stars={1}
+      hover="lap"
+      clickPulse={true}
+      color={isDark ? "#ffffff" : "#0a0a0a"}
+      trailColor={isDark ? "rgba(255, 255, 255, 0.7)" : "rgba(10, 10, 10, 0.7)"}
+      backgroundColor={isDark ? "#09090b" : "#ffffff"}
+      borderColor={isDark ? "rgba(255, 255, 255, 0.12)" : "rgba(10, 10, 10, 0.1)"}
+      textColor={isDark ? "#fafafa" : "#09090b"}
+      className="focus-ring relative inline-flex h-11 items-center justify-center px-4 sm:px-5 text-sm font-medium select-none shadow-sm transition-opacity hover:opacity-95"
     >
       <motion.span
         layout="position"
@@ -89,6 +104,6 @@ export function ContactButton(): ReactNode {
           )}
         </AnimatePresence>
       </motion.span>
-    </motion.button>
+    </StarBorder>
   );
 }
