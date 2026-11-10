@@ -21,14 +21,14 @@ export const hero = {
   name: "I\u2019m Farrukh",
   headingLines: ["I build things", "for the web."] as const,
   tagline:
-    "Frontend Engineer specializing in modern web architecture, high-performance interfaces, and responsive web applications with React, Next.js, TypeScript, and modern UI systems.",
+    "Full Stack Software Engineer specializing in scalable web systems, resilient backend APIs, and high-performance interfaces with Next.js 15, TypeScript, Node.js/NestJS, Python, and PostgreSQL.",
   portrait: {
     src: "/farrukh.jpg",
     alt: "Farrukh Jumayev portrait",
   },
   ctas: {
     primary: { label: "View My Work", href: "/projects" },
-    resume: { label: "Resume", href: "/Farrukh_Resume.pdf?v=4" },
+    resume: { label: "Resume", href: "/Farrukh_Resume.pdf?v=5" },
   },
 } as const;
 
@@ -141,7 +141,7 @@ export type ExperienceEntry = {
 export const experience: ExperienceEntry[] = [
   {
     company: "Independent Solutions",
-    role: "Frontend Engineer",
+    role: "Full Stack Engineer",
     period: "2024 – Present",
     brand: "#0AE448",
   },
@@ -153,7 +153,7 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: "Najot Ta'lim",
-    role: "Frontend Development Bootcamp",
+    role: "Full Stack Development Bootcamp",
     period: "Completed",
     brand: "#2F74C0",
   },
@@ -178,7 +178,7 @@ export const education: EducationEntry[] = [
   },
   {
     school: "Najot Ta'lim",
-    degree: "Modern Frontend Engineering (React, Next.js, TypeScript)",
+    degree: "Full Stack & Modern Web Engineering (TypeScript, React, Next.js)",
     period: "Completed",
   },
 ];
@@ -192,13 +192,15 @@ export const skills: string[] = [
   "Next.js 15 (App Router, Server Actions)",
   "React 19 & React Server Components",
   "Node.js & NestJS Microservices",
+  "Python (FastAPI & CLI Tooling)",
   "PostgreSQL & Prisma ORM",
+  "Redis (In-Memory Caching & Performance)",
+  "AWS (EC2, S3, RDS) & Docker CI/CD",
   "Tailwind CSS & ShadCN UI",
   "Zustand & TanStack Query",
-  "Docker & CI/CD Pipelines",
   "RESTful APIs & WebSockets",
   "Vitest, Jest & Playwright",
-  "C & Low-Level Algorithms",
+  "C & Low-Level POSIX Systems",
   "Web Performance & Core Web Vitals",
 ];
 
@@ -215,15 +217,16 @@ export type StackChip = {
 };
 
 export const stackChips: StackChip[] = [
-  { label: "React", slug: "react", bg: "#1FB6CB", fg: "#ffffff" },
   { label: "Next.js", slug: "nextdotjs", bg: "#1f1f1f", fg: "#ffffff" },
   { label: "TypeScript", slug: "typescript", bg: "#2F74C0", fg: "#ffffff" },
-  { label: "NestJS", slug: "nestjs", bg: "#E0234E", fg: "#ffffff" },
+  { label: "Python", slug: "python", bg: "#3776AB", fg: "#ffffff" },
   { label: "PostgreSQL", slug: "postgresql", bg: "#4169E1", fg: "#ffffff" },
+  { label: "React", slug: "react", bg: "#1FB6CB", fg: "#ffffff" },
+  { label: "NestJS", slug: "nestjs", bg: "#E0234E", fg: "#ffffff" },
+  { label: "AWS", slug: "amazonwebservices", bg: "#FF9900", fg: "#ffffff" },
   { label: "Docker", slug: "docker", bg: "#2496ED", fg: "#ffffff" },
   { label: "Tailwind CSS", slug: "tailwindcss", bg: "#2BBCF5", fg: "#ffffff" },
   { label: "Git", slug: "git", bg: "#F05032", fg: "#ffffff" },
-  { label: "GitHub", slug: "github", bg: "#181717", fg: "#ffffff" },
   { label: "Vercel", slug: "vercel", bg: "#000000", fg: "#ffffff" },
 ];
 
@@ -242,5 +245,5 @@ export const contact = {
     github: "https://github.com/thefarrukhdev",
   },
   copyright: "2026 © Farrukh Jumayev",
-  role: "Frontend Engineer",
+  role: "Full Stack Software Engineer",
 } as const;

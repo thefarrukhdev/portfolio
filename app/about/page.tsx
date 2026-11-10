@@ -30,13 +30,13 @@ export default function AboutPage(): ReactNode {
             </h1>
             <div className="mt-8 space-y-6 text-[17px] leading-[1.7] tracking-tight text-foreground/75 sm:text-[18px]">
               <p>
-                A <strong className="font-semibold text-foreground">Frontend Engineer</strong> specializing in <strong className="font-semibold text-foreground">React and Next.js</strong>, focused on building modern, scalable, and maintainable web applications with clean architecture and strong UI engineering practices.
+                A <strong className="font-semibold text-foreground">Full Stack Software Engineer</strong> specializing in <strong className="font-semibold text-foreground">Next.js 15, TypeScript, Node.js/NestJS, and PostgreSQL</strong>, focused on architecting resilient backend systems and high-performance user interfaces.
               </p>
               <p>
-                My journey into frontend development began with a passion for creating interfaces that not only look great but also perform excellently. I embrace <strong className="font-semibold text-foreground">clean code principles</strong> and <strong className="font-semibold text-foreground">component-driven architecture</strong> as core foundations of my work.
+                My engineering approach combines fast product shipping velocity with deterministic backend integrity. I embrace <strong className="font-semibold text-foreground">strict type safety</strong>, <strong className="font-semibold text-foreground">atomic transactions</strong>, and <strong className="font-semibold text-foreground">Core Web Vitals optimization</strong> as core foundations of my work.
               </p>
               <p>
-                Currently expanding my skills through <strong className="font-semibold text-foreground">School 21 / 42 Network</strong>, diving deeper into backend development and system-level programming. Always looking for opportunities to <strong className="font-semibold text-foreground">build impactful products and collaborate</strong> with great teams.
+                Grounded in rigorous computer science and systems foundations through <strong className="font-semibold text-foreground">School 21 / 42 Network</strong> (C, memory management, algorithms, POSIX systems). Always focused on <strong className="font-semibold text-foreground">building reliable products and collaborating</strong> with ambitious teams.
               </p>
             </div>
           </div>

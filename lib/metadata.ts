@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const siteConfig = {
   name: "Farrukh Jumayev",
   description:
-    "Frontend Engineer specializing in React, Next.js, and TypeScript, focused on building scalable, performant, and accessible web platforms.",
+    "Full Stack Software Engineer specializing in Next.js 15, TypeScript, Node.js, Python, and PostgreSQL. Focused on architecting scalable backend APIs, deterministic data systems, and high-performance web platforms.",
   url: "https://thefarrukhdev.vercel.app",
   ogImage: "/og-image.png",
   creator: "@thefarrukhdev",
@@ -15,13 +15,15 @@ export const siteConfig = {
   ],
   keywords: [
     "Farrukh Jumayev",
-    "Frontend Engineer",
-    "React Developer",
+    "Full Stack Software Engineer",
+    "Software Engineer",
     "Next.js Developer",
     "TypeScript",
-    "Tailwind CSS",
-    "JavaScript",
-    "Software Engineer",
+    "PostgreSQL",
+    "Python",
+    "Node.js",
+    "React",
+    "AWS",
     "School 21",
     "Web Performance",
   ],
@@ -30,7 +32,7 @@ export const siteConfig = {
 export const baseMetadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — Frontend Engineer`,
+    default: `${siteConfig.name} — Full Stack Software Engineer`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -100,12 +102,12 @@ export function createMetadata({
   const ogImage = image ?? siteConfig.ogImage;
   const isHome = path === "/" || !title || title === "Home";
   const displayTitle = isHome
-    ? `${siteConfig.name} — Frontend Engineer`
+    ? `${siteConfig.name} — Full Stack Software Engineer`
     : `${title} | ${siteConfig.name}`;
 
   return {
     title: isHome
-      ? { absolute: `${siteConfig.name} — Frontend Engineer` }
+      ? { absolute: `${siteConfig.name} — Full Stack Software Engineer` }
       : title,
     description: description ?? siteConfig.description,
     alternates: {

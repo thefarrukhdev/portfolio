@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: `${siteConfig.name} — Frontend Engineer`,
+  title: `${siteConfig.name} — Full Stack Software Engineer`,
   description: siteConfig.description,
   path: "/",
 });
