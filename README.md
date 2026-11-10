@@ -29,10 +29,10 @@ To run this project locally, ensure you have [Node.js](https://nodejs.org/) and 
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/thefarrukhdev/farrukh.dev.git
+git clone https://github.com/thefarrukhdev/portfolio.git
 
 # 2. Navigate to the project directory
-cd farrukh.dev
+cd portfolio
 
 # 3. Install dependencies using pnpm
 pnpm install
