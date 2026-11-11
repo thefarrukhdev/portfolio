@@ -77,7 +77,6 @@ export const projects: Project[] = [
     imageRatio: 16 / 10,
     image: "/projects/safaar.png",
     imageAlt: "Safaar Travel & Accommodation Platform screenshot",
-    githubUrl: "https://github.com/thefarrukhdev/safaar",
     demoUrl: "https://safaar.uz/",
   },
   {
@@ -106,7 +105,6 @@ export const projects: Project[] = [
     imageRatio: 16 / 10,
     image: "/projects/kokand_university_lightMode.png",
     imageAlt: "Kokand University platform screenshot",
-    githubUrl: "https://github.com/thefarrukhdev/kokand_university",
     demoUrl: "https://kualumni.uz/",
   },
   {
@@ -121,7 +119,6 @@ export const projects: Project[] = [
     imageRatio: 16 / 10,
     image: "/projects/paymex-projects.png",
     imageAlt: "PAYMEX Telegram Mini App screenshot",
-    githubUrl: "https://github.com/thefarrukhdev/paymex",
     demoUrl: "https://paymex.vercel.app/",
   },
 ];
