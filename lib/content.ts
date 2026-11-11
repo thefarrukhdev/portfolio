@@ -119,6 +119,7 @@ export const projects: Project[] = [
     imageRatio: 16 / 10,
     image: "/projects/paymex-projects.png",
     imageAlt: "PAYMEX Telegram Mini App screenshot",
+    githubUrl: "https://github.com/thefarrukhdev/paymex",
     demoUrl: "https://paymex.vercel.app/",
   },
 ];
